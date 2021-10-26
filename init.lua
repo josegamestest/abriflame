@@ -1,4 +1,3 @@
-
 local function smoke(pos, node, clicker, enable)
 	local meta = minetest.get_meta(pos)
 	local handler = meta:get_int("sound")
@@ -65,7 +64,7 @@ for _, f in pairs(flame_types) do
 		sunlight_propagates = true,
 		buildable_to = true,
 		walkable = false,
-		light_source = 14,
+		light_source = 6,
 		waving = 1,
 		drop = "",
 		tiles = {{
